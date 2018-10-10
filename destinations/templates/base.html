@@ -7,14 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Add a link to the bootstrap CDN here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   
   
   <!-- Uncomment the following line to include your custom CSS file -->
-  {% comment %} 
-    <link rel="stylesheet" type="text/css" href="{% static 'custom.css' %}"> 
-  {% endcomment %}
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'custom.css' %}"> 
+  
 
   <title>{% block title %}{% endblock title %}</title>
+
+  <link rel="stylesheet" href = "{% static 'custom.css' %}"
+
 </head>
 
 <body>

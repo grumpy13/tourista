@@ -4,9 +4,15 @@
 {% block title %}Create{% endblock title %}
 
 {% block content %}
-<form action="{% url 'destination-create' %}" method="POST" enctype="multipart/form-data">
-  {% csrf_token %}
-  {{form.as_p}}
-  <input type="submit" value="Create">
-</form>
+<div class="jumbotron jumbotron-fluid mt-5" style="font-size: 19px; font-weight: bold; font-family: Georgia;">
+  <div class="container">
+   <div class ="card-body">
+	<form action="{% url 'destination-create' %}" method="POST" enctype="multipart/form-data">
+	  {% csrf_token %}
+	  {{form | crispy}}
+	  <input type="submit" value="Create">
+	</form>
+  </div>
+ </div>
+</div>
 {% endblock content %}
